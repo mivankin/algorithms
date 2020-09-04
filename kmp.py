@@ -1,4 +1,11 @@
+"""
+Knuth–Morris–Pratt algorithm
+"""
+
 def pi_function(a):
+	"""
+	pi function implementation
+	"""
 	p = [0]*len(a)
 	i = 1
 	j = 0
@@ -16,6 +23,9 @@ def pi_function(a):
 	return p
 
 def str_find(t, a, p):
+	"""
+	Search algorithm O(n+m), where n - string length, m - substring length
+	"""
 	k = 0
 	l = 0
 	while k < len(t):
